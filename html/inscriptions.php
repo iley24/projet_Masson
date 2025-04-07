@@ -15,7 +15,7 @@ Remplissez le formulaire ci-dessous et entrez dans la course pour gagner la BMW 
 <ul>
     <li>1️⃣ Indiquez votre nom et le modèle BMW que vous souhaitez gagner.</li><br>
     <li>2️⃣ Validez votre inscription en soumettant le formulaire.</li><br>
-    <li>3️⃣ Consultez la liste des participants dans l'onglet Commandes.</li><br>
+    <li>3️⃣ Consultez la liste des participants dans l'onglet Liste.</li><br>
 </ul>
 
 📢 Le tirage au sort désignera le grand gagnant ! 
@@ -27,7 +27,7 @@ N'attendez plus, inscrivez-vous dès maintenant et tentez votre chance ! 🍀
     <form action="traitement.php" method="post">
         <input type="text" name="firstname" id="firstname" placeholder="Nom" maxlength="100" required>
         <input type="text" name="lastname" id="lastname" placeholder="Prénom" maxlength="100" required>
-        <select name="couleur" id="couleur" required>
+        <select name="modeles" id="modeles" required>
             <option disabled selected>Choissis ton modèle...</option>
             <option value="1">BMW M4</option>
             <option value="2">BMW M2</option>
