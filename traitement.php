@@ -22,8 +22,18 @@ if(
         WHERE idvehicules = '$modeles'
     ";
 
-    if ($connexion->query($req_client)) {
+    try {
+        if ($connexion->query($req_client)) {
             header('Location:reponse.php');
+        } else {
+            echo "Erreur lors de l'inscription : " . $connexion->error;
+        }
+    } catch (PDOException $error) {
+        if ($error->getCode() == 23000) {
+            header('Location: Erreur_email.php');
+        } else {
+            header('Location:reponse.php'); 
+        }
     }
 } else {
     header('Location: inscription.php');
