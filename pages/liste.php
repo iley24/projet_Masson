@@ -13,31 +13,28 @@
         </thead>
         <tbody>
             <?php
-            // connexion DB
             include '../inc/connexion.php';
-            // requête pour tout récupérer
             $sql = "SELECT * FROM clients;
                     INNER JOIN vehicules ON clients.idclients = vehicules.idvehicules;
                     ";
             $infos = $connexion->query($sql);
-            // affichage
             foreach($infos AS $i):
             ?>
             <tr>
                 <td><?= strtoupper($i['nom']) ?></td>
                 <td><?= strtolower($i['prenom']) ?></td>
                 <td><?= strtolower($i['email']) ?></td>
-                <td><?= strtoupper($i['vehicules']) ?></td>
+                <td><?= strtoupper($i['modeles']) ?></td>
                 <td>
                     <form action="modifier.php" method="post">
                         <input type="hidden" name="id" value="<?= $i['idclients'] ?>">
-                        <input type="image" src="../images/stylo.svg" alt="">
+                        <input type="image" src="../image/modifier.svg" alt="">
                     </form>
                 </td>
                 <td>
                 <form action="delete.php" method="post">
                         <input type="hidden" name="id" value="<?= $i['idclients'] ?>">
-                        <input type="image" src="../images/croix.svg" alt="">
+                        <input type="image" src="../image/close.svg" alt="">
                     </form>
                 </td>
             </tr>
