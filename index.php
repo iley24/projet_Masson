@@ -1,6 +1,6 @@
 <?php 
 $title = 'Accueil';
-include '<inc/header.php' ?>
+include 'inc/header.php' ?>
 <main>
     
     <section>
@@ -31,4 +31,4 @@ Bonne chance ! 🍀
     </aside>
 </main>
 
-<?php include '<inc/footer.php' ?>
+<?php include 'inc/footer.php' ?>
