@@ -57,6 +57,10 @@ main aside img{
 header input{
     line-height: 2em;
 }
+header form{
+    display: flex;
+    align-items: center;
+}
 main aside form{
     width: auto;
     padding: 4%;
