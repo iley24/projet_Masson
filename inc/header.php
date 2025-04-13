@@ -25,7 +25,7 @@
     </a>
     <h1 id="titre">BMW Dream</h1>
 
-    <form action="recherche.php" method="get">
+    <form action="<?= BASE ?>html/recherche.php" method="get">
         <input type="search" name="recherche" id="recherche" maxlength="200" placeholder="Recherche...">
         <input type="image" src="<?= BASE ?>image/loupe.svg" height="50px" id="loupe">
     </form>
