@@ -44,8 +44,8 @@ Bonne chance à tous ! 🍀🚘
             foreach($infos AS $i):
             ?>
             <tr>
-                <td><?= strtoupper($i['nom']) ?></td>
-                <td><?= strtolower($i['prenom']) ?></td>
+                <td><?= strtoupper($i['prenom']) ?></td>
+                <td><?= strtolower($i['nom']) ?></td>
                 <td><?= strtolower($i['email']) ?></td>
                 <td><?= strtoupper($i['modeles']) ?></td>
             </tr>
