@@ -35,4 +35,5 @@
     <a href="<?= BASE ?>index.php">Accueil</a>
     <a href="<?= BASE ?>html/inscriptions.php">Inscriptions</a>
     <a href="<?= BASE ?>html/liste.php">Liste</a>
+    <a href="<?= BASE ?>html/personnel.php">Personnel</a>
 </nav>
