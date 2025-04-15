@@ -23,8 +23,35 @@ Chaque participant a inscrit son nom et choisi le modèle qu’il aimerait rempo
 Bonne chance à tous ! 🍀🚘  
 
 </section>
-<aside>
-    aside
+<aside id="tab">
+    <table summary="" border=2>
+        <caption>Participants : </caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>E-mail</th>
+                <th>Modèles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            include 'connexion.php';
+            $sql = "SELECT * FROM clients;
+                    INNER JOIN vehicules ON clients.idclients = vehicules.idvehicules;
+                    ";
+            $infos = $connexion->query($sql);
+            foreach($infos AS $i):
+            ?>
+            <tr>
+                <td><?= strtoupper($i['nom']) ?></td>
+                <td><?= strtolower($i['prenom']) ?></td>
+                <td><?= strtolower($i['email']) ?></td>
+                <td><?= strtoupper($i['modeles']) ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 </aside>
 </main>
 

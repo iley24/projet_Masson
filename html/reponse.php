@@ -27,7 +27,7 @@ N'attendez plus, inscrivez-vous dès maintenant et tentez votre chance ! 🍀
     <br><br>
     <h2>Merci de votre participation !</h2>
     <br><br>
-    <h2>Cliquer sur l'onglet Liste pour voir apparaître votre nom sur la liste des participants !</h2>
+    <h2>Cliquer sur l'onglet <a href="liste.php">Liste</a> pour voir apparaître votre nom sur la liste des participants !</h2>
 </aside>
 </main>
 
