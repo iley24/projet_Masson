@@ -48,6 +48,10 @@ aside{
     padding: 2%;
     font-size: 0.9em;
 }
+aside form #logout{
+    padding: 2%;
+    margin: 1%;
+}
 main aside img{
     width: 40%;
     margin: 4%;
@@ -152,6 +156,19 @@ nav a{
     font-size: 1.8em;    
     
 }
+table{
+    width: 100%;
+    font-size: 0.6em;
+    border-radius: 10px;
+    border-color: white;
+}
+table caption{
+    font-size: 2em;
+}
+main aside form{
+    margin: 0;
+    padding: 0;
+}
 /* css burger */
 #burger{
     display: none;
@@ -181,4 +198,17 @@ div#lightbox img#close{
     position: absolute;
     top: 2%;
     right: 2%;
+}
+#closeTab{
+    width: 40px;
+}
+#loupeTab{
+    width: 40px;
+}
+#tab{
+    text-align: center;
+}
+#tab input{
+    margin: 0;
+    padding: 0;
 }
