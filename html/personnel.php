@@ -14,7 +14,7 @@ include '../inc/header.php' ?>
 <main>
     
 <section>
-    <p>👤 Connecté en tant que : <strong><?= htmlspecialchars(strtoupper($_SESSION['admin'])) ?></strong></p>
+    <p>👤 Connecté en tant que : <?= htmlspecialchars(strtoupper($_SESSION['admin'])) ?></p>
     <br>
 
   <h2>Espace Administrateur 🔐</h2>
