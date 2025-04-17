@@ -4,7 +4,7 @@ session_start();
 $admins = [
     'iley' => 'lebie',
     'mewan' => 'jouan',
-    'adem' => 'kabore',
+    'adam' => 'kabore',
 ];
 
 if (isset($_POST['login']) && isset($_POST['password'])
@@ -22,6 +22,6 @@ if (isset($_POST['login']) && isset($_POST['password'])
     }
 }
 
-// Si les identifiants sont incorrects
+
 header('Location: login.php?erreur=1');
 exit;
