@@ -1,0 +1,64 @@
+@media screen and (max-width: 600px) {
+    /* Réinitialisation douce */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Layout global */
+    article, main, section, aside {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Menu burger */
+    nav {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        background-color: #333; /* Assure que le fond soit visible */
+        flex-direction: column;
+        display: none; /* caché par défaut */
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 2em;
+        border-bottom: 1px solid white;
+        color: white;
+        background-color: #444;
+        text-decoration: none;
+    }
+
+    #burger {
+        display: block;
+        width: 12%;
+        cursor: pointer;
+    }
+
+    /* Images génériques */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 25%;
+    }
+
+    #loupe {
+        width: 10%;
+    }
+}
