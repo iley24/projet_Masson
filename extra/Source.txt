@@ -1,1 +1,1 @@
-https://stackoverflow.com/questions/10430005/php-mysql-pdo-fatal-error-23000-eventhough-a-special-procedure-is-in-place
+Source pour getcode 23000: https://stackoverflow.com/questions/10430005/php-mysql-pdo-fatal-error-23000-eventhough-a-special-procedure-is-in-place
