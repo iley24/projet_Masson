@@ -23,7 +23,8 @@ N'attendez plus, inscrivez-vous dès maintenant et tentez votre chance ! 🍀
 
 </section>
 <aside>
-    <h3>Vous êtes déjà inscrit à ce concours avec cette adresse email.<h3>
+    <h2>Vous êtes déjà inscrit à ce concours avec cette adresse email.<br>
+    Allez directement dans l'onglet Liste et consultez votre inscription.</h2>
 </aside>
 </main>
 
